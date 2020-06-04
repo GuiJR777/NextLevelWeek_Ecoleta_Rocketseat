@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}
+
+{% block title %}
+    <title>Resultado da Pesquisa</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/search-results.css">
+{% endblock styles %}
+
+{% block content %}
+    {%include "partials/header.html" %}
+    <main>
+        <h4>
+            <strong>2 pontos</strong>encontrados
+        </h4>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://www.greeneletron.org.br/blog/wp-content/uploads/2019/09/20190605-3L9A3317-683x1024.jpg" alt="Colectoria">
+                <h1>Colectoria</h1>
+                <h3>Residuos Eletrônicos, Lâmpada</h3>
+                <p>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme Gemballa, Jardim América
+                    <br/>
+                    Número 260
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://odivisor.com.br/libs/thumb.php?src=/cms/files/noticias/6602/papelai.jpg&w=600&h=400" alt="Papersider">
+                <h1>Papersider</h1>
+                <h3>Papéis e Papelão</h3>
+                <p>
+                    Rio do Sul, Santa Catarina
+                    <br/>
+                    Guilherme Gemballa, Jardim América
+                    <br/>
+                    Número 260
+                </p>
+            </div>
+        </div>
+
+    </main>
+{% endblock content %}
