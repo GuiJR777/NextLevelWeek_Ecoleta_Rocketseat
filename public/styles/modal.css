@@ -65,7 +65,7 @@
 
     padding: 16px 24px;
 
-    font-size: 16px;
+    font-size: 13px;
     color: #6c6c80;
 
     outline: none;
@@ -87,3 +87,25 @@
 #modal form button:hover{
     background-color: #2fb85e;
 }
+#modal .All a{
+    display: inline;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 35%;
+    color: white;
+    
+
+}
+
+/*point-created*/
+
+#modal.point{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modal.point h1{
+    color:white;
+    margin-top: 32px;
+}
+

@@ -70,6 +70,8 @@ function handleSelectedItem(event){
 
     const itemId= itemLi.dataset.id
 
+    console.log('ITEM ID: ', itemId)
+
     const alredySelected= selectedItens.findIndex( (item)=> {
         const itemFound= item == itemId
         return itemFound
@@ -87,6 +89,7 @@ function handleSelectedItem(event){
     }else{
         selectedItens.push(itemId)
     }
+    console.log("selectedItens: ", selectedItens)
 
     collectedItens.value= selectedItens
 }
