@@ -1,6 +1,9 @@
 :root{
     --title-color: #322153;
-    --primary-color: #34cb79
+    --title-dark: white;
+    --primary-color: #34cb79;
+    --bgLight-color: #f0f0f5;
+    --bgDark-color: #393B3A;
 }
 
 *{
@@ -9,24 +12,70 @@
     box-sizing: border-box;
 }
 
+.night-mode body{
+    background-color: var(--bgDark-color);
+    
+}
+.night-mode h1{
+    color: var(--title-dark);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.night-mode h2{
+    color: var(--title-dark);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.night-mode label{
+    color: var(--title-dark);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.night-mode span{
+    color: var(--title-dark);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.night-mode p{
+    color: var(--title-dark);
+}
+
+
+
 html {
     font-family: "Roboto", sans-serif;
 }
 
 body{
-    background: #f0f0f5;
+    background: var(--bgLight-color);
     --webkit-font-smoothing: antialiased;
 }
 
 a {
     text-decoration: none;
+    
+    
 
 }
+.night-mode a {
+    text-decoration: none;
+    
+
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--title-color);
     font-family: "Ubuntu", sans-serif;
 }
+
+.night-mode header img{
+    background-color: #393B3A;
+    border-radius: 8px;
+}
+
+
+
 /*Box model
 Modelo de caixa
 toda caixa possui:

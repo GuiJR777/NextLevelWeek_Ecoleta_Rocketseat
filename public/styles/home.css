@@ -28,6 +28,13 @@
     
 }
 
+.night-mode #page-home header a{
+    display: flex;
+    color: white;
+    font-weight: 700;
+    
+}
+
 #page-home header a span {
     margin-right: 16px;
     display: flex;
@@ -36,6 +43,36 @@
     width: 20px;
     height: 20px;
 }
+
+
+
+#page-home header a input{
+    all: unset;
+    margin-left: 16px;
+        
+    background-image: url("../assets/idea2.svg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: -3px;
+    
+    width: 25px;
+    height:25px;
+}
+
+.night-mode #page-home header a input{
+    all: unset;
+    margin-left: 16px;
+        
+    background-image: url("../assets/ideia.svg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: -3px;
+    
+    width: 25px;
+    height:25px;
+}
+
+
 
 #page-home main {
     max-width: 560px;

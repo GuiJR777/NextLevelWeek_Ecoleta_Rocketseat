@@ -90,7 +90,6 @@ server.get("/search", (req, res) => {
             return console.log(err)
         }
         const total = rows.length
-        console.log(rows)
         //mostrar html com dados do BD
         return res.render("search-results.html", { places: rows, total: total })
     })
@@ -103,12 +102,12 @@ server.get("/searchAll", (req, res) => {
             return console.log(err)
         }
         const total = rows.length
-        console.log(rows)
         //mostrar html com dados do BD
         return res.render("search-results.html", { places: rows, total: total })
     })
 
 })
+
 
 
 server.listen(3000)

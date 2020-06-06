@@ -56,19 +56,19 @@ module.exports= db
         console.log(this)
     }
 
-   db.run(querry, values, afterInsertData)
+   db.run(querry, values, afterInsertData)*/
    
 
     // deletar um dado
-    db.run(`DELETE FROM places WHERE id= ?`, [4], function(err){
-        if(err){
-            return console.log(err)
-        }
+    // db.run(`DELETE FROM places WHERE id= ?`, [7], function(err){
+    //     if(err){
+    //         return console.log(err)
+    //     }
         
-        console.log("Registro deletado com sucesso!")
-    })
+    //     console.log("Registro deletado com sucesso!")
+    // })
 
-    //consultar dados
+   /* //consultar dados
     // db.all("SELECT name FROM places", function(err, rows){
     //     if(err){
     //         return console.log(err)
